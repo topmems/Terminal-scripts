@@ -1,0 +1,6 @@
+import Terminal, Field, Character, time, GameState, Field
+
+GetCharacters = Field.FindCharacter(#) #CharID here
+if GetCharacters == CharID:
+    Terminal.ChangeChannel(0)
+    print("Character found")
