@@ -1,0 +1,11 @@
+#This script teleports your character to your botting character, takes 15 seconds to loot and rushes back to set map ID
+
+import Terminal, Field, time, GameState
+
+IdleMap = 100000000 #henesys map ID. Change for different idle map.
+
+Terminal.SetFollowID(#) #Use Real ID for FollowID found by hovering over client in manager
+time.sleep(15)
+Terminal.SetFollowID(0) 
+Terminal.Rush(IdleMap)
+time.sleep(60)
