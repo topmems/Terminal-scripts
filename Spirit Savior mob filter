@@ -1,0 +1,15 @@
+import os, sys, Terminal, Field
+
+if not any("SunCat" in s for s in sys.path):
+    sys.path.append(os.getcwd() + "\SunCat")
+
+try:
+    import SunCat, SCHotkey, SCLib
+except:
+    print("Couldn't find SunCat module")
+    
+enemyMobs = [8644201, 8644301, 8644302, 8644303, 8644304, 8644305]
+
+for mob in enemyMobs:
+    SunCat.FilterMob(mob)
+		
